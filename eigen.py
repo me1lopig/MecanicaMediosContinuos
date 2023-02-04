@@ -2,6 +2,9 @@
 # programa para calcular autovalores y autovectores
 # para aplicar en tensores de tensiones y deformaciones
 
+# listado de funciones
+
+
 import numpy as np
 
 # Define el tensor de tensiones
