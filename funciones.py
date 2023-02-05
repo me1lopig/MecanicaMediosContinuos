@@ -6,9 +6,12 @@
 # eigen, calcula los autovalores y los autovectores de un tensor
 
 
+
+# importacion de librerias 
 import numpy as np
 
 
+# definición de funciones
 
 def invariantes(tensor):
 
@@ -31,7 +34,6 @@ def eigen(tensor):
 
 
 
-
 def funcion(tensor):
     # Calcular las autovalores del tensor
     autovalores = np.linalg.eigvals(tensor)
@@ -40,7 +42,7 @@ def funcion(tensor):
     media = np.mean(autovalores)
 
     # Crear la matriz identidad
-    I = np.identity(3)
+    I = np.identity(len(tensor))
 
     # Calcular el tensor esférico
     tensor_esferico = media * I
