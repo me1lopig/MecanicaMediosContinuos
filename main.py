@@ -8,11 +8,23 @@
 
 import funciones as fn
 
-# introducción del tensor 
-tensor=([20,0,25],[0,10,0],[25,0,100])
+# introducción de las componentes del tensor
+t11=20
+t22=10
+t33=100
+t12=0
+t13=25
+t23=0
+# composicion del tensor
+tensor=([t11,t12,t13],[t12,t22,t23],[t13,t23,t33])
+
+# impresion del tensor
+print('El tensor es ')
+print(tensor)
 
 # invariantes
 I1,I2,I3=fn.invariantes(tensor)
+print('Los invariantes del tensor son ')
 print(I1," ",I2," ",I3)
 
 # autovalores y autovectores
