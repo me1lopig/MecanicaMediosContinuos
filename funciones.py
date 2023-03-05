@@ -4,7 +4,9 @@
 # Lista de funciones
 # invariantes, calcula los invariantes de un tensor
 # eigen, calcula los autovalores y los autovectores de un tensor
-
+# esf_desv, calcula los tensones esfericos y desviadores de una tensor
+# 
+# def_elastica, calcula el tensor de deformacion
 
 
 # importacion de librerias 
@@ -34,7 +36,7 @@ def eigen(tensor):
 
 
 
-def funcion(tensor):
+def esf_desv(tensor):
     # Calcular las autovalores del tensor
     autovalores = np.linalg.eigvals(tensor)
 
